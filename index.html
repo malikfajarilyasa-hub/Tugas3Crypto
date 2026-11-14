@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Crypto Market - Tugas 03</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="phone-container">
+      <div class="phone-screen">
+        <!-- Bagian Header -->
+        <header class="app-header">
+          <h1>Crypto Market</h1>
+          <p>Cryptocurrency Market Overview</p>
+        </header>
+
+        <!-- Tombol Refresh -->
+        <section class="refresh-section">
+          <button id="refreshButton" type="button">
+            <span id="refreshIcon">↻</span>
+            Refresh
+          </button>
+        </section>
+
+        <!-- Informasi waktu -->
+        <div class="update-info">
+          <span id="updateStatus">Memuat data cryptocurrency...</span>
+        </div>
+
+        <!-- Judul daftar -->
+        <section class="crypto-section">
+          <div class="crypto-heading">
+            <h2>Top Cryptocurrency</h2>
+            <span>USD</span>
+          </div>
+
+          <!-- Daftar cryptocurrency dari API -->
+          <div id="cryptoList" class="crypto-list">
+            <div class="loading">Memuat data...</div>
+          </div>
+        </section>
+
+        <!-- Pesan error -->
+        <div id="errorMessage" class="error-message" role="alert"></div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+          <p>Data source: CoinLore API</p>
+          <p>MSIM4401 - Tugas 03</p>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
